@@ -1,0 +1,67 @@
+<%= form_with(model: expedient) do |form| %>
+  <% if expedient.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(expedient.errors.count, "error") %> prohibited this expedient from being saved:</h2>
+
+      <ul>
+        <% expedient.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :nombre_solicitante, style: "display: block" %>
+    <%= form.text_field :nombre_solicitante %>
+  </div>
+
+  <div>
+    <%= form.label :apellido_solicitante, style: "display: block" %>
+    <%= form.text_field :apellido_solicitante %>
+  </div>
+
+  <div>
+    <%= form.label :tipo_persona, style: "display: block" %>
+    <%= form.text_field :tipo_persona %>
+  </div>
+
+  <div>
+    <%= form.label :edad, style: "display: block" %>
+    <%= form.text_field :edad %>
+  </div>
+
+  <div>
+    <%= form.label :expediente_status_id, style: "display: block" %>
+    <%= form.number_field :expediente_status_id %>
+  </div>
+
+  <div>
+    <%= form.label :fecha_nacimiento, style: "display: block" %>
+    <%= form.date_field :fecha_nacimiento %>
+  </div>
+
+  <div>
+    <%= form.label :tipo_solicitud_id, style: "display: block" %>
+    <%= form.number_field :tipo_solicitud_id %>
+  </div>
+
+  <div>
+    <%= form.label :cantidad_solicitada, style: "display: block" %>
+    <%= form.number_field :cantidad_solicitada %>
+  </div>
+
+  <div>
+    <%= form.label :identificador_unico, style: "display: block" %>
+    <%= form.text_field :identificador_unico %>
+  </div>
+
+  <div>
+    <%= form.label :email, style: "display: block" %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
