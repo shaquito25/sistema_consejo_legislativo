@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_07_25_174718) do
+ActiveRecord::Schema[7.0].define(version: 2022_07_25_182322) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -19,9 +19,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_25_174718) do
     t.string "apellido_solicitante"
     t.string "tipo_persona"
     t.string "edad"
-    t.integer "expediente_status_id"
+    t.bigint "expediente_status_id"
     t.date "fecha_nacimiento"
-    t.integer "tipo_solicitud_id"
+    t.bigint "tipo_solicitud_id"
     t.integer "cantidad_solicitada"
     t.string "identificador_unico"
     t.string "email"

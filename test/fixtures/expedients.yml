@@ -5,9 +5,9 @@ one:
   apellido_solicitante: MyString
   tipo_persona: MyString
   edad: MyString
-  expediente_status_id: 1
+  expediente_status_id: 
   fecha_nacimiento: 2022-07-25
-  tipo_solicitud_id: 1
+  tipo_solicitud_id: 
   cantidad_solicitada: 1
   identificador_unico: MyString
   email: MyString
@@ -17,9 +17,9 @@ two:
   apellido_solicitante: MyString
   tipo_persona: MyString
   edad: MyString
-  expediente_status_id: 1
+  expediente_status_id: 
   fecha_nacimiento: 2022-07-25
-  tipo_solicitud_id: 1
+  tipo_solicitud_id: 
   cantidad_solicitada: 1
   identificador_unico: MyString
   email: MyString
